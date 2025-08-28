@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   root: true,
   extends: [
     "airbnb-base",
@@ -15,9 +15,9 @@ export default {
     requireConfigFile: false,
   },
   rules: {
-    "import/extensions": ["error", { js: "always" }],
-    "linebreak-style": ["error", "unix"],
-    "no-param-reassign": [2, { props: false }],
+    "import/extensions": ["error", { js: "always" }], // require js file extensions in imports
+    "linebreak-style": ["error", "unix"], // enforce unix linebreaks
+    "no-param-reassign": [2, { props: false }], // allow modifying properties of param
     "import/no-extraneous-dependencies": [
       "error",
       {
@@ -31,7 +31,7 @@ export default {
     "xwalk/max-cells": [
       "error",
       {
-        "*": 4,
+        "*": 4, // default limit for all models
         form: 16,
         wizard: 12,
         "form-button": 7,
@@ -59,6 +59,6 @@ export default {
         range: 19,
       },
     ],
-    "xwalk/no-orphan-collapsible-fields": "off",
+    "xwalk/no-orphan-collapsible-fields": "off", // Disable until enhancement is done for Forms properties
   },
 };
