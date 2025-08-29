@@ -5,3 +5,8 @@
   z-index: 2;
   left: 0;
 }
+
+.edge-delivery-banner > div {
+  display: flex;
+  flex-direction: column;
+}
