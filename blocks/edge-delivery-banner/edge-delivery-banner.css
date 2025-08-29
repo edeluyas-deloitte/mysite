@@ -1,5 +1,6 @@
 .edge-delivery-banner {
-  background-color: blue;
+  background-color: salmon;
+  color: antiquewhite;
   padding: 5px;
   width:100%;
   z-index: 2;
@@ -8,5 +9,5 @@
 
 .edge-delivery-banner > div {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
